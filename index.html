@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hanan Jan</title>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbeef0;--bg2:#f3d3da;--ink:#4a1626;--soft:#8a4a5c;--rose:#b83256;--gold:#a87a2c;--card:#fff7f8;--line:rgba(168,122,44,.4);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c0a14;--bg2:#3a1226;--ink:#fbe9ec;--soft:#d9a3b2;--rose:#ee6a8c;--gold:#e0b565;--card:#2a0f1e;--line:rgba(224,181,101,.35)}}
+:root[data-theme="dark"]{--bg:#1c0a14;--bg2:#3a1226;--ink:#fbe9ec;--soft:#d9a3b2;--rose:#ee6a8c;--gold:#e0b565;--card:#2a0f1e;--line:rgba(224,181,101,.35)}
+html{scroll-padding-top:4.5rem;scroll-behavior:smooth;height:auto}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 12% 0%,color-mix(in srgb,#7457d8 26%,transparent),transparent 45%),radial-gradient(circle at 92% 8%,color-mix(in srgb,#d6336c 24%,transparent),transparent 45%),radial-gradient(circle at 50% 100%,color-mix(in srgb,#c97a0a 22%,transparent),transparent 55%),var(--bg) fixed;color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;line-height:1.7;overflow-x:hidden}
+.i{width:1.4em;height:1.4em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.3em}
+.script{font-family:'Pinyon Script','Snell Roundhand',cursive;font-weight:400}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:.3rem;justify-content:center;flex-wrap:wrap;padding:.6rem;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav a{color:var(--soft);text-decoration:none;font-size:1rem;padding:.2rem .7rem;border-radius:99px;display:flex;gap:.35rem;align-items:center}
+nav a:hover,nav a:focus-visible{background:var(--bg2);color:var(--rose);outline:none}
+section{max-width:60rem;margin:0 auto;padding:5rem 1.4rem;position:relative;z-index:1}
+.c{text-align:center}
+h1{font-size:clamp(4.4rem,20vw,9rem);line-height:1.05;margin:0;color:var(--rose);animation:glow 1.6s ease-out both}
+@keyframes glow{from{opacity:0;filter:blur(8px)}to{opacity:1;filter:blur(0)}}
+h2{font-size:clamp(2.6rem,9vw,3.6rem);color:var(--rose);margin:0 0 .4rem;line-height:1.1}
+.lead{color:var(--soft);font-style:italic;max-width:36rem;margin:0 auto 2.5rem}
+.hero{min-height:80vh;padding-top:3rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.profile{display:flex;flex-wrap:wrap;gap:.8rem 1.6rem;justify-content:center;margin:1.6rem 0 2.4rem;color:var(--soft)}
+.profile span{display:flex;gap:.45rem;align-items:center}
+.profile .i{color:var(--rose)}
+.btn{font:inherit;font-size:1.2rem;border:0;border-radius:99px;padding:.7rem 1.8rem;cursor:pointer;background:var(--rose);color:#fff;text-decoration:none;display:inline-flex;gap:.5rem;align-items:center}
+.btn.ghost{background:transparent;color:var(--rose);border:1px solid var(--rose)}
+.btn:focus-visible,.seal:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.2rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:.9rem;padding:1.6rem 1.4rem}
+.card .i{width:2.2rem;height:2.2rem;color:var(--rose);margin-bottom:.5rem}
+.card h3{font-size:1.5rem;margin:0 0 .3rem;color:var(--ink)}
+.card p{margin:0;color:var(--soft);font-size:1.1rem;line-height:1.55}
+.tl{list-style:none;margin:2rem auto 0;padding:0 0 0 2.8rem;max-width:40rem;position:relative}
+.tl::before{content:"";position:absolute;left:1.05rem;top:.4rem;bottom:.4rem;width:2px;background:var(--line)}
+.tl li{position:relative;padding-bottom:2rem}
+.tl .dot{position:absolute;left:-2.8rem;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--rose);color:#fff;display:grid;place-items:center}
+.tl .dot .i{width:1.1rem;height:1.1rem}
+.tl h3{margin:0;font-size:1.5rem}.tl p{margin:.2rem 0 0;color:var(--soft)}
+.seal{width:6.5rem;height:6.5rem;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle at 35% 30%,#e9738f,#9c2142 70%);color:#fff3f5;box-shadow:0 8px 30px rgba(156,33,66,.45),inset 0 -6px 12px rgba(0,0,0,.25);animation:beat 1.8s ease-in-out infinite}
+.seal .i{width:2.6rem;height:2.6rem;fill:#fff3f5}
+@keyframes beat{0%,100%{transform:scale(1)}20%{transform:scale(1.1)}40%{transform:scale(1)}}
+.letter{display:none;max-width:36rem;margin:2rem auto 0;background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:2.2rem 1.6rem;text-align:left;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.letter.open{display:block}.letter .to{font-size:2.3rem;color:var(--rose);margin:0 0 .5rem}
+#typed{white-space:pre-wrap;margin:0;min-height:14rem}
+.date{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:1.2rem;padding:3rem 1.4rem;max-width:40rem;margin:0 auto}
+.cal{width:8.5rem;margin:0 auto 1.4rem;border-radius:.9rem;overflow:hidden;border:1px solid var(--line);background:var(--bg)}
+.cal b{display:block;background:var(--rose);color:#fff;font-weight:600;font-size:1.1rem;padding:.2rem}
+.cal span{display:block;font-size:3.6rem;line-height:1.1;padding:.3rem 0;color:var(--ink)}
+.cal i{display:block;font-style:normal;color:var(--soft);padding-bottom:.4rem}
+.info{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;justify-content:center;color:var(--soft);margin:1rem 0 2rem}
+.info span{display:flex;gap:.4rem;align-items:center}.info .i{color:var(--rose)}
+.choices{display:flex;gap:1.2rem;justify-content:center;align-items:center;min-height:5.5rem;flex-wrap:wrap}
+#yes{transition:transform .25s;font-size:1.4rem}
+#no{background:#6d5560;font-size:1.1rem;touch-action:none;z-index:50}
+#nomsg{min-height:2rem;color:var(--soft);font-style:italic;margin-top:1rem}
+#done{display:none}
+#done h3{font-size:3rem;margin:.5rem 0}
+.foot{text-align:center;color:var(--soft);font-size:1rem;padding:2rem 1rem 4rem}
+.h{position:fixed;bottom:-2rem;z-index:0;pointer-events:none;color:var(--rose);opacity:.5;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.page:not(.on){display:none}
+nav a.on{background:var(--bg2);color:var(--rose)}
+.bday{font-size:clamp(2.2rem,10vw,3.6rem);color:var(--gold);margin:.6rem 0 0}
+.pager{width:100%;display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;flex-wrap:wrap}
+.pager:has(.solo){justify-content:center}
+.cake{position:relative;width:14rem;height:12.5rem;margin:2.5rem auto 1.5rem}
+.layer{position:absolute;left:50%;transform:translateX(-50%);border-radius:.7rem .7rem .3rem .3rem}
+.l1{bottom:0;width:14rem;height:4.4rem;background:linear-gradient(#f7a8bb,#e0607f)}
+.l2{bottom:4.4rem;width:10.5rem;height:3.8rem;background:linear-gradient(#fff0f3,#f3c3cf)}
+.candles{position:absolute;bottom:8.2rem;left:0;right:0;display:flex;justify-content:center;gap:1.7rem}
+.cd{width:.5rem;height:2.4rem;background:var(--gold);border-radius:2px;position:relative}
+.fl{position:absolute;left:50%;top:-1.2rem;width:.8rem;height:1.2rem;margin-left:-.4rem;background:radial-gradient(#fff6c8,#ffb300 60%,transparent 72%);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;animation:fk .3s infinite alternate}
+.out .fl{display:none}
+@keyframes fk{to{transform:scale(1.15) rotate(4deg)}}
+.wish{display:none;max-width:34rem;margin:1.8rem auto 0;font-size:1.4rem;color:var(--ink)}
+.wish.show{display:block}
+.page{--ac-l:#d6336c;--ac-d:#ff7aa2;--rose:var(--ac-l)}
+.hub a{--rose:var(--ac-l)}
+.a1{--ac-l:#c97a0a;--ac-d:#f5b44f}.a2{--ac-l:#7457d8;--ac-d:#b3a0ff}.a3{--ac-l:#0f8f89;--ac-d:#3fd6cc}
+.a4{--ac-l:#d6336c;--ac-d:#ff7aa2}.a5{--ac-l:#2f8f5b;--ac-d:#6fdc9b}.a6{--ac-l:#dc3f49;--ac-d:#ff8a8f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .page,:root:not([data-theme="light"]) .hub a{--rose:var(--ac-d)}}
+:root[data-theme="dark"] .page,:root[data-theme="dark"] .hub a{--rose:var(--ac-d)}
+.hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.9rem;width:100%;max-width:44rem;margin-top:2.2rem}
+.hub a{text-decoration:none;color:var(--ink);background:var(--card);border:1px solid color-mix(in srgb,var(--rose) 40%,transparent);border-top:4px solid var(--rose);border-radius:1rem;padding:1.2rem .8rem;display:flex;flex-direction:column;align-items:center;gap:.25rem;transition:transform .2s,box-shadow .2s}
+.hub a:hover,.hub a:focus-visible{transform:translateY(-4px);box-shadow:0 10px 26px color-mix(in srgb,var(--rose) 35%,transparent);outline:none}
+.hub .i{width:2.2rem;height:2.2rem;color:var(--rose)}
+.hub b{font-size:1.35rem;font-weight:600}.hub small{color:var(--soft);font-size:.95rem;line-height:1.3}
+.back{margin:0 auto 1.5rem;display:flex;width:max-content}
+.page.on{animation:pg .5s ease both}@keyframes pg{from{opacity:0;transform:translateY(14px)}}
+@media (prefers-reduced-motion:reduce){.page.on{animation:none}}
+@media (prefers-reduced-motion:reduce){.seal,h1{animation:none}.h{display:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.500-1.500-2.700-2-4.500-2A5.500 5.500 0 0 0 2 8.500c0 2.300 1.500 4 3 5.500l7 7Z"/></symbol>
+<symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3.100 6.300 6.900 1-5 4.900 1.200 6.900-6.200-3.300-6.200 3.300L7 14.200 2 9.300l6.900-1z"/></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+<symbol id="gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4"/><path d="M12 8v13M19 12v9H5v-9M7.500 8a2.500 2.500 0 0 1 0-5C11 3 12 8 12 8s1-5 4.500-5a2.500 2.500 0 0 1 0 5"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.970 5.700a2 2 0 0 1-2.060 0L2 7"/></symbol>
+<symbol id="coffee" viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4ZM6 2v2M10 2v2M14 2v2"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.500 7.500-7.700 8.900a1 1 0 0 1-.6 0C7.500 20.500 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.500-1.200 6.200-2.700a1.200 1.200 0 0 1 1.600 0C14.500 3.800 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+<symbol id="smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.500 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+<symbol id="hands" viewBox="0 0 24 24"><path d="M12 21s-8-5.500-8-11a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 5.500-8 11-8 11Z"/><path d="M8 12h8"/></symbol>
+<symbol id="inf" viewBox="0 0 24 24"><path d="M12 12c-2-2.700-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.300 6-4Zm0 0c2 2.700 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.300-6 4Z"/></symbol>
+<symbol id="send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4ZM22 2 11 13"/></symbol>
+</svg>
+
+
+<section class="hero page" id="top">
+  <svg class="i" style="width:3rem;height:3rem;color:var(--gold);fill:currentColor;stroke:none"><use href="#heart"/></svg>
+  <p class="script bday">Happy Birthday</p>
+  <h1 class="script">Hanan Jan</h1>
+  <p class="lead" style="margin-bottom:0;margin-top:.6rem">Mere hone wale humsafar, meri har dua ka jawab.</p>
+  <div class="hub">
+    <a class="a1" href="#birthday"><svg class="i"><use href="#gift"/></svg><b>Birthday</b><small>Tumhara surprise</small></a>
+    <a class="a2" href="#kahani"><svg class="i"><use href="#star"/></svg><b>Kahani</b><small>Hamari kahani</small></a>
+    <a class="a3" href="#khoobiyan"><svg class="i"><use href="#smile"/></svg><b>Khoobiyan</b><small>Jo mujhe pasand hain</small></a>
+    <a class="a4" href="#khat"><svg class="i"><use href="#mail"/></svg><b>Khat</b><small>Dil ki baat</small></a>
+    <a class="a5" href="#wade"><svg class="i"><use href="#shield"/></svg><b>Wade</b><small>Mere pakke wade</small></a>
+    <a class="a6" href="#date"><svg class="i"><use href="#cal"/></svg><b>Date</b><small>05 October</small></a>
+  </div>
+</section>
+
+<section class="page c a1" id="birthday">
+  <h2 class="script">Happy Birthday</h2>
+  <p class="lead">Aaj ka din sirf mere Hanan Jan ka hai.</p>
+  <div class="cake" id="cake">
+    <div class="candles"><div class="cd"><i class="fl"></i></div><div class="cd"><i class="fl"></i></div><div class="cd"><i class="fl"></i></div></div>
+    <div class="layer l2"></div><div class="layer l1"></div>
+  </div>
+  <button class="btn" id="blow"><svg class="i"><use href="#gift"/></svg>Moombattiyan bujhao</button>
+  <p class="wish script" id="wish" style="font-size:1.9rem">Happy Birthday, meri jaan! Allah tumhein lambi, khush aur sehatmand zindagi de, aur tumhari har dua qubool ho. Tum meri zindagi ka sab se khoobsurat tohfa ho.</p>
+</section>
+
+<section class="page a2" id="kahani">
+  <div class="c"><h2 class="script">Hamari Kahani</h2><p class="lead">Ek chhoti si shuruaat se ek poori zindagi tak.</p></div>
+  <ol class="tl">
+    <li><span class="dot"><svg class="i"><use href="#star"/></svg></span><h3>Jab tum mile</h3><p>Ek naam aur ek ehsas jo seedha dil mein utar gaya. Us din se dil ne tumhara intezar karna seekh liya.</p></li>
+    <li><span class="dot"><svg class="i"><use href="#mail"/></svg></span><h3>Baatein jo khatam na hui</h3><p>Chhoti chhoti baatein, lambi lambi raatein, aur har baat mein tumhari fikar.</p></li>
+    <li><span class="dot"><svg class="i"><use href="#hands"/></svg></span><h3>Dua qubool hui</h3><p>Maine jo maanga tha, Allah ne tum ko bana kar de diya. Shukar hai.</p></li>
+    <li><span class="dot"><svg class="i"><use href="#inf"/></svg></span><h3>Aane wala kal</h3><p>Ek ghar, ek chai ki mez, aur tum. Bas yahi mera khwab hai.</p></li>
+  </ol>
+</section>
+
+<section class="page a3" id="khoobiyan">
+  <div class="c"><h2 class="script">Tumhari Khoobiyan</h2><p class="lead">Wo baatein jin ki wajah se main tum se mohabbat karti hoon.</p></div>
+  <div class="grid">
+    <div class="card"><svg class="i"><use href="#smile"/></svg><h3>Tumhari muskurahat</h3><p>Din kitna bhi mushkil ho, tumhari ek muskurahat sab theek kar deti hai.</p></div>
+    <div class="card"><svg class="i"><use href="#shield"/></svg><h3>Tumhari hifazat</h3><p>Tumhare saath main khud ko mehfooz mehsoos karti hoon.</p></div>
+    <div class="card"><svg class="i"><use href="#heart"/></svg><h3>Tumhara pyar</h3><p>Bina kahe samajh jana, bina maange de dena. Ye sirf tum ho.</p></div>
+    <div class="card"><svg class="i"><use href="#moon"/></svg><h3>Tumhara sukoon</h3><p>Tumhari awaaz mere liye raat ki sab se pyari lori hai.</p></div>
+    <div class="card"><svg class="i"><use href="#coffee"/></svg><h3>Tumhari saadgi</h3><p>Tum jaise ho, mujhe waise hi bohat pasand ho.</p></div>
+    <div class="card"><svg class="i"><use href="#star"/></svg><h3>Tumhari sachai</h3><p>Tum par bharosa karna mere liye sab se asaan kaam hai.</p></div>
+  </div>
+</section>
+
+<section id="khat" class="c page a4">
+  <h2 class="script">Dil ka Khat</h2>
+  <p class="lead">Dil par tap karo aur parho jo main kehna chahti hoon.</p>
+  <button class="seal" id="seal" aria-label="Khat kholo"><svg class="i"><use href="#heart"/></svg></button>
+  <div class="letter" id="letter"><p class="to script">Mere Hanan Jan,</p><p id="typed"></p></div>
+</section>
+
+<section class="page a5" id="wade">
+  <div class="c"><h2 class="script">Mere Wade</h2><p class="lead">Ye wo wade hain jo main tum se karti hoon.</p></div>
+  <div class="grid">
+    <div class="card"><svg class="i"><use href="#hands"/></svg><h3>Saath nibhaungi</h3><p>Khushi ho ya gham, main tumhara haath kabhi nahi chhodungi.</p></div>
+    <div class="card"><svg class="i"><use href="#coffee"/></svg><h3>Khayal rakhungi</h3><p>Tumhari chai se le kar tumhari neend tak, har cheez ka.</p></div>
+    <div class="card"><svg class="i"><use href="#gift"/></svg><h3>Khush rakhungi</h3><p>Har din ko tumhare liye ek chhota sa tohfa bana dungi.</p></div>
+    <div class="card"><svg class="i"><use href="#inf"/></svg><h3>Hamesha tumhari</h3><p>Aaj, kal, aur jab tak saansein hain.</p></div>
+  </div>
+</section>
+
+<section class="page a6" id="date">
+  <div class="date" id="ask">
+    <div class="cal"><b>OCTOBER</b><span>05</span><i>Date Night</i></div>
+    <h2 class="script">Ek khaas sawal</h2>
+    <p style="font-size:1.5rem;margin:.4rem 0">Kya tum 05 October ko mere saath date par chalo ge?</p>
+    <div class="info">
+      <span><svg class="i"><use href="#cal"/></svg>05 October</span>
+      <span><svg class="i"><use href="#clock"/></svg>Shaam ka waqt</span>
+      <span><svg class="i"><use href="#pin"/></svg>Jahan tum chaho</span>
+    </div>
+    <div class="choices" id="choices">
+      <button class="btn" id="yes"><svg class="i"><use href="#heart"/></svg>Yes</button>
+      <button class="btn" id="no" type="button">No</button>
+    </div>
+    <p id="nomsg" aria-live="polite"></p>
+  </div>
+  <div class="date c" id="done">
+    <svg class="i" style="width:3.5rem;height:3.5rem;color:var(--rose);fill:currentColor;stroke:none"><use href="#heart"/></svg>
+    <h3 class="script">Date pakki!</h3>
+    <p style="font-size:1.4rem">05 October, tum aur main. Mujhe pata tha tum haan hi kaho ge.</p>
+    <a class="btn" id="wa" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#send"/></svg>Mujhe WhatsApp par batao</a>
+  </div>
+</section>
+
+<p class="foot">Sirf Hanan Jan ke liye, poore dil se.</p>
+
+<script>
+var msg="Jab se tum meri zindagi mein aaye ho, har cheez khoobsurat lagne lagi hai.\n\nMain Allah ka shukar ada karti hoon ke usne mujhe tum jaisa humsafar diya. Tumhari baatein, tumhari fikar, aur tumhari ek muskurahat meri poori duniya hai.\n\nWada karti hoon, har haal mein tumhare saath rahungi, aaj bhi aur hamesha.\n\nTumhari,\nHamesha ke liye.";
+function heart(){var e=document.createElement('div');e.className='h';e.textContent='\u2665';e.style.left=Math.random()*100+'vw';e.style.fontSize=(12+Math.random()*26)+'px';e.style.animationDuration=(5+Math.random()*6)+'s';document.body.appendChild(e);setTimeout(function(){e.remove()},11500)}
+setInterval(heart,900);
+function burst(n){for(var i=0;i<n;i++)setTimeout(heart,i*60)}
+var seal=document.getElementById('seal'),started=false;
+seal.onclick=function(){if(started)return;started=true;seal.style.display='none';document.getElementById('letter').classList.add('open');burst(18);var t=document.getElementById('typed'),i=0;(function s(){t.textContent=msg.slice(0,i++);if(i<=msg.length)setTimeout(s,45)})()};
+
+var yes=document.getElementById('yes'),no=document.getElementById('no'),nm=document.getElementById('nomsg'),tries=0,moved=false;
+var lines=["Arre, ye button to bhaag gaya!","Nahi nahi, yahan click nahi ho sakta.","Pakad ke dikhao to jaanein.","Sirf Yes ka option kaam karta hai.","Itni koshish? Yes daba do na.","Dekho, Yes kitna bada ho gaya hai.","No ne haar maan li. Ab Yes dabao."];
+function place(){var w=innerWidth,h=innerHeight,bw=no.offsetWidth,bh=no.offsetHeight;no.style.position='fixed';no.style.left=(8+Math.random()*Math.max(1,w-bw-16))+'px';no.style.top=(8+Math.random()*Math.max(1,h-bh-16))+'px'}
+function dodge(e){if(e){if(e.cancelable)e.preventDefault();e.stopPropagation()}tries++;moved=true;place();nm.textContent=lines[Math.min(tries-1,lines.length-1)];yes.style.transform='scale('+Math.min(1+tries*0.12,2.2)+')';yes.style.margin=(tries*3)+'px'}
+['pointerenter','pointerdown','touchstart','mousedown','click','focus'].forEach(function(ev){no.addEventListener(ev,dodge,{passive:false})});
+no.addEventListener('keydown',dodge);
+function vis(){if(!moved)return;var r=document.getElementById('ask').getBoundingClientRect();no.style.visibility=(r.bottom>0&&r.top<innerHeight&&document.getElementById('ask').style.display!=='none')?'visible':'hidden'}
+addEventListener('scroll',vis,{passive:true});addEventListener('resize',function(){if(moved)place()});
+yes.onclick=function(){document.getElementById('ask').style.display='none';no.style.display='none';var d=document.getElementById('done');d.style.display='block';document.getElementById('wa').href='https://wa.me/?text='+encodeURIComponent('Haan! Main 05 October ko tumhare saath date par chalungi \u2764');burst(60);d.scrollIntoView({block:'center'})};
+
+var order=['top','birthday','kahani','khoobiyan','khat','wade','date'];
+document.querySelectorAll('.page').forEach(function(p){if(p.id!=='top')p.insertAdjacentHTML('afterbegin','<a class="btn ghost back" href="#top"><svg class="i"><use href="#heart"/></svg>Wapas menu</a>')});
+function go(){var id=(location.hash||'#top').slice(1);if(order.indexOf(id)<0)id='top';
+ document.querySelectorAll('.page').forEach(function(p){p.classList.toggle('on',p.id===id)});
+ document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)});
+ scrollTo(0,0);vis();if(id==='birthday')burst(25)}
+addEventListener('hashchange',go);go();
+document.getElementById('blow').onclick=function(){document.getElementById('cake').classList.add('out');document.getElementById('wish').classList.add('show');this.style.display='none';burst(70)};
+</script>
+</body>
+</html>
